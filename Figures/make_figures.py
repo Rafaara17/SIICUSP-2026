@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Builds the two result figures of the SIICUSP 2026 abstract from the RouTrip
+Builds the four result figures of the SIICUSP 2026 abstract from the RouTrip
 benchmark data.
 
 The aggregated numbers below are copied verbatim from ``anim_tsp.py`` (dicts
@@ -51,6 +51,12 @@ INK = "#1a1a1a"        # primary text
 INK_SOFT = "#555555"   # secondary text / axis labels
 GRID = "#d9d9d9"
 
+# Each figure is a single-column float in a twocolumn a4 layout with 2.6 cm
+# side margins and 0.8 cm gutter, so \columnwidth is exactly 7.5 cm.  Drawing
+# at that width and including at \columnwidth keeps the scale at 1:1, which is
+# what holds the tick labels at their true 7.5 pt on paper.
+FIG_W = 7.5 / 2.54
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 plt.rcParams.update({
@@ -61,7 +67,7 @@ plt.rcParams.update({
     "axes.labelsize": 8,
     "xtick.labelsize": 7.5,
     "ytick.labelsize": 7.5,
-    "legend.fontsize": 8,
+    "legend.fontsize": 7,
     "axes.edgecolor": "#8a8a8a",
     "axes.linewidth": 0.8,
     "text.color": INK,
@@ -84,60 +90,83 @@ def style_axes(ax, yaxis_grid=True):
     ax.tick_params(length=3, width=0.8)
 
 
-def panel_tag(ax, text):
-    ax.set_title(text, loc="left", color=INK, fontweight="bold", pad=6)
+def size_axis(ax):
+    """Shared x axis of the two by-instance-size figures."""
+    x = list(range(len(SIZES)))
+    ax.set_xticks(x)
+    ax.set_xticklabels([str(c) for c in CITIES])
+    ax.set_xlim(-0.15, len(SIZES) - 0.85)
+    ax.set_xlabel("Instance size (cities)")
+
+
+def series_legend(ax):
+    """
+    Legend sits inside the axes, upper left.  In both series figures every
+    curve climbs to the right, so that corner is empty; keeping the legend
+    there instead of under the axes buys ~1 cm of height, which is what lets
+    the float land next to the sentence that cites it.
+    """
+    ax.legend(loc="upper left", ncol=2, frameon=False, fontsize=6.5,
+              handlelength=1.2, columnspacing=0.9, handletextpad=0.35,
+              borderpad=0.1, labelspacing=0.3, labelcolor=INK)
 
 
 # ---------------------------------------------------------------- figure 1
-def figure_gap_and_time(path):
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(6.3, 1.85))
+def figure_gap(path):
+    # Figures 1 and 2 have to share one column, and LaTeX weighs the height of
+    # an already-placed float against the next one twice, so this height is
+    # what keeps the pair together instead of spilling figure 2 onto page 2.
+    fig, ax = plt.subplots(figsize=(FIG_W, 1.20))
     x = list(range(len(SIZES)))
 
     for a in ALGOS:
-        ax1.plot(x, GAP[a], color=COLORS[a], marker=MARKERS[a], markersize=4.5,
-                 linewidth=1.7, markeredgecolor="white", markeredgewidth=0.7,
-                 label=a, clip_on=False)
-    panel_tag(ax1, "(a) Solution quality")
-    ax1.set_ylabel("Mean optimality gap (%)")
-    ax1.set_xlabel("Instance size (cities)")
-    ax1.set_ylim(-0.15, 4.6)
-    style_axes(ax1)
+        ax.plot(x, GAP[a], color=COLORS[a], marker=MARKERS[a], markersize=4.0,
+                linewidth=1.5, markeredgecolor="white", markeredgewidth=0.7,
+                label=a, clip_on=False)
+    # Figures 1 and 2 are short enough that a rotated label past ~12 characters
+    # runs off the axes, so the qualifiers live in the caption instead.
+    ax.set_ylabel("Gap (%)")
+    ax.set_ylim(-0.15, 5.9)  # headroom for the legend over the ALNS curve
+    ax.set_yticks([0, 1, 2, 3, 4])
+    size_axis(ax)
+    style_axes(ax)
+    series_legend(ax)
 
-    for a in ALGOS:
-        ax2.plot(x, TIME[a], color=COLORS[a], marker=MARKERS[a], markersize=4.5,
-                 linewidth=1.7, markeredgecolor="white", markeredgewidth=0.7,
-                 label=a, clip_on=False)
-    panel_tag(ax2, "(b) Runtime")
-    ax2.set_yscale("log")
-    ax2.set_ylabel("Mean runtime (s, log scale)")
-    ax2.set_xlabel("Instance size (cities)")
-    ax2.set_yticks([0.1, 1, 10])
-    ax2.set_yticklabels(["0.1", "1", "10"])
-    ax2.minorticks_off()
-    style_axes(ax2)
-
-    for ax in (ax1, ax2):
-        ax.set_xticks(x)
-        ax.set_xticklabels([str(c) for c in CITIES])
-        ax.set_xlim(-0.15, len(SIZES) - 0.85)
-
-    handles, labels = ax1.get_legend_handles_labels()
-    fig.legend(handles, labels, loc="lower center", ncol=5, frameon=False,
-               bbox_to_anchor=(0.5, -0.02), handlelength=1.8,
-               columnspacing=1.6, labelcolor=INK)
-
-    fig.tight_layout(rect=(0, 0.09, 1, 1))
-    fig.subplots_adjust(wspace=0.32)
+    fig.tight_layout()
     fig.savefig(path, dpi=300)
     plt.close(fig)
     print("wrote", path)
 
 
 # ---------------------------------------------------------------- figure 2
-def figure_tradeoff_and_winrate(path):
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(6.3, 1.85))
+def figure_time(path):
+    fig, ax = plt.subplots(figsize=(FIG_W, 1.20))  # see figure_gap
+    x = list(range(len(SIZES)))
 
-    # (a) quality x time on the largest instance
+    for a in ALGOS:
+        ax.plot(x, TIME[a], color=COLORS[a], marker=MARKERS[a], markersize=4.0,
+                linewidth=1.5, markeredgecolor="white", markeredgewidth=0.7,
+                label=a, clip_on=False)
+    ax.set_yscale("log")
+    ax.set_ylabel("Runtime (s)")  # see figure_gap
+    ax.set_ylim(0.045, 300)  # headroom for the legend over the ALNS curve
+    ax.set_yticks([0.1, 1, 10])
+    ax.set_yticklabels(["0.1", "1", "10"])
+    ax.minorticks_off()
+    size_axis(ax)
+    style_axes(ax)
+    series_legend(ax)
+
+    fig.tight_layout()
+    fig.savefig(path, dpi=300)
+    plt.close(fig)
+    print("wrote", path)
+
+
+# ---------------------------------------------------------------- figure 3
+def figure_tradeoff(path):
+    fig, ax = plt.subplots(figsize=(FIG_W, 1.55))
+
     xs = {a: TIME[a][-1] for a in ALGOS}
     ys = {a: GAP[a][-1] for a in ALGOS}
 
@@ -146,61 +175,69 @@ def figure_tradeoff_and_winrate(path):
               if not any(xs[b] <= xs[a] and ys[b] <= ys[a] and
                          (xs[b] < xs[a] or ys[b] < ys[a]) for b in ALGOS)]
 
-    label_offset = {"LKH3": (13, 7), "HGS": (-31, -3), "ILS": (7, 5),
-                    "ALNS": (-8, 10), "GNN": (9, 5)}
+    label_offset = {"LKH3": (12, 8), "HGS": (-28, -2), "ILS": (6, 5),
+                    "ALNS": (-9, 9), "GNN": (7, 5)}
     for a in ALGOS:
-        ax1.scatter(xs[a], ys[a], s=55, color=COLORS[a], marker=MARKERS[a],
-                    edgecolor="white", linewidth=0.8, zorder=3)
-        ax1.annotate(a, (xs[a], ys[a]), textcoords="offset points",
-                     xytext=label_offset[a], fontsize=7.5, color=INK)
+        ax.scatter(xs[a], ys[a], s=55, color=COLORS[a], marker=MARKERS[a],
+                   edgecolor="white", linewidth=0.8, zorder=3)
+        ax.annotate(a, (xs[a], ys[a]), textcoords="offset points",
+                    xytext=label_offset[a], fontsize=7.5, color=INK)
 
     for a in pareto:  # non-dominated marker gets a visible ring
-        ax1.scatter(xs[a], ys[a], s=190, facecolor="none",
-                    edgecolor=COLORS[a], linewidth=1.0, zorder=2)
-        ax1.annotate("best trade-off", (xs[a], ys[a]),
-                     textcoords="offset points", xytext=(13, -6),
-                     fontsize=7, color=INK_SOFT, style="italic")
+        ax.scatter(xs[a], ys[a], s=190, facecolor="none",
+                   edgecolor=COLORS[a], linewidth=1.0, zorder=2)
+        ax.annotate("best trade-off", (xs[a], ys[a]),
+                    textcoords="offset points", xytext=(12, -7),
+                    fontsize=7, color=INK_SOFT, style="italic")
 
-    panel_tag(ax1, "(a) Quality vs. runtime on TSP100")
-    ax1.set_xscale("log")
-    ax1.set_xlabel("Mean runtime (s, log scale)")
-    ax1.set_ylabel("Mean optimality gap (%)")
-    ax1.set_xlim(0.08, 60)
-    ax1.set_ylim(-0.35, 5.0)
-    ax1.set_xticks([0.1, 1, 10])
-    ax1.set_xticklabels(["0.1", "1", "10"])
-    ax1.minorticks_off()
-    style_axes(ax1)
-
-    # (b) win rate
-    order = sorted(ALGOS, key=lambda a: WIN[a])
-    ypos = list(range(len(order)))
-    for y, a in zip(ypos, order):
-        ax2.barh(y, WIN[a], height=0.55, color=COLORS[a], zorder=2)
-        ax2.text(WIN[a] + 2.5, y, f"{WIN[a]}%", va="center", fontsize=7.5,
-                 color=INK_SOFT)
-
-    panel_tag(ax2, "(b) Win rate")
-    ax2.set_yticks(ypos)
-    ax2.set_yticklabels(order, color=INK)
-    ax2.set_xlabel("Runs reaching the best known solution (%)")
-    ax2.set_xlim(0, 118)
-    ax2.set_xticks([0, 25, 50, 75, 100])
-    ax2.xaxis.grid(True, color=GRID, linewidth=0.6)
-    ax2.yaxis.grid(False)
-    ax2.set_axisbelow(True)
-    ax2.spines["top"].set_visible(False)
-    ax2.spines["right"].set_visible(False)
-    ax2.tick_params(length=3, width=0.8)
+    ax.set_xscale("log")
+    ax.set_xlabel("Mean runtime (s, log scale)")
+    ax.set_ylabel("Mean optimality gap (%)")
+    ax.set_xlim(0.08, 60)
+    ax.set_ylim(-0.35, 5.0)
+    ax.set_xticks([0.1, 1, 10])
+    ax.set_xticklabels(["0.1", "1", "10"])
+    ax.minorticks_off()
+    style_axes(ax)
 
     fig.tight_layout()
-    fig.subplots_adjust(wspace=0.30)
     fig.savefig(path, dpi=300)
     plt.close(fig)
     print("wrote", path)
     print("non-dominated at TSP100:", pareto)
 
 
+# ---------------------------------------------------------------- figure 4
+def figure_winrate(path):
+    fig, ax = plt.subplots(figsize=(FIG_W, 1.35))
+
+    order = sorted(ALGOS, key=lambda a: WIN[a])
+    ypos = list(range(len(order)))
+    for y, a in zip(ypos, order):
+        ax.barh(y, WIN[a], height=0.55, color=COLORS[a], zorder=2)
+        ax.text(WIN[a] + 2.5, y, f"{WIN[a]}%", va="center", fontsize=7.5,
+                color=INK_SOFT)
+
+    ax.set_yticks(ypos)
+    ax.set_yticklabels(order, color=INK)
+    ax.set_xlabel("Runs reaching the best known solution (%)")
+    ax.set_xlim(0, 118)
+    ax.set_xticks([0, 25, 50, 75, 100])
+    ax.xaxis.grid(True, color=GRID, linewidth=0.6)
+    ax.yaxis.grid(False)
+    ax.set_axisbelow(True)
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.tick_params(length=3, width=0.8)
+
+    fig.tight_layout()
+    fig.savefig(path, dpi=300)
+    plt.close(fig)
+    print("wrote", path)
+
+
 if __name__ == "__main__":
-    figure_gap_and_time(os.path.join(HERE, "fig1_gap_time.png"))
-    figure_tradeoff_and_winrate(os.path.join(HERE, "fig2_tradeoff_winrate.png"))
+    figure_gap(os.path.join(HERE, "fig1_gap.png"))
+    figure_time(os.path.join(HERE, "fig2_time.png"))
+    figure_tradeoff(os.path.join(HERE, "fig3_tradeoff.png"))
+    figure_winrate(os.path.join(HERE, "fig4_winrate.png"))

@@ -1,0 +1,40 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Helsgaun(2017)]{helsgaun2017}
+Keld Helsgaun.
+\newblock An extension of the {L}in--{K}ernighan--{H}elsgaun {TSP} solver for
+  constrained traveling salesman and vehicle routing problems.
+\newblock Technical report, Roskilde University, Roskilde, Denmark, 2017.
+
+\bibitem[Kool et~al.(2019)Kool, van Hoof, and Welling]{kool2019}
+Wouter Kool, Herke van Hoof, and Max Welling.
+\newblock Attention, learn to solve routing problems!
+\newblock In \emph{International Conference on Learning Representations
+  ({ICLR})}, 2019.
+
+\bibitem[Louren{\c{c}}o et~al.(2003)Louren{\c{c}}o, Martin, and
+  St{\"u}tzle]{lourenco2003}
+Helena~R. Louren{\c{c}}o, Olivier~C. Martin, and Thomas St{\"u}tzle.
+\newblock Iterated local search.
+\newblock In \emph{Handbook of Metaheuristics}, pages 320--353. Springer,
+  Boston, MA, 2003.
+
+\bibitem[Ropke and Pisinger(2006)]{ropke2006}
+Stefan Ropke and David Pisinger.
+\newblock An adaptive large neighborhood search heuristic for the pickup and
+  delivery problem with time windows.
+\newblock \emph{Transportation Science}, 40\penalty0 (4):\penalty0 455--472,
+  2006.
+
+\bibitem[Vidal(2022)]{vidal2022}
+Thibaut Vidal.
+\newblock Hybrid genetic search for the {CVRP}: Open-source implementation and
+  {SWAP*} neighborhood.
+\newblock \emph{Computers \& Operations Research}, 140:\penalty0 105643, 2022.
+
+\end{thebibliography}

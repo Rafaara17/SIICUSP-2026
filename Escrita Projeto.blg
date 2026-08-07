@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Escrita Projeto.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: plainnat.bst
+Reallocating 'name_of_file' (item size: 1) to 19 items.
+Database file #1: bibtex/siicusp2026.bib
+You've used 5 entries,
+            2773 wiz_defined-function locations,
+            625 strings with 5715 characters,
+and the built_in function-call counts, 2217 in all, are:
+= -- 203
+> -- 101
+< -- 4
++ -- 35
+- -- 30
+* -- 161
+:= -- 341
+add.period$ -- 16
+call.type$ -- 5
+change.case$ -- 26
+chr.to.int$ -- 5
+cite$ -- 10
+duplicate$ -- 113
+empty$ -- 197
+format.name$ -- 37
+if$ -- 471
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 4
+newline$ -- 33
+num.names$ -- 20
+pop$ -- 50
+preamble$ -- 1
+purify$ -- 20
+quote$ -- 0
+skip$ -- 82
+stack$ -- 0
+substring$ -- 85
+swap$ -- 14
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 55
+warning$ -- 0
+while$ -- 21
+width$ -- 0
+write$ -- 74
