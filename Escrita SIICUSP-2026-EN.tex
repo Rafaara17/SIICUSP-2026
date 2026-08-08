@@ -4,9 +4,11 @@
 \usepackage[a4paper,
             top=1.25cm, bottom=4.2cm, left=2.6cm, right=2.6cm,
             includehead, headheight=2.83cm, headsep=0.15cm]{geometry}
-\usepackage[scaled]{helvet}            
-\usepackage{graphicx}                  
-\usepackage{fancyhdr}                  
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{fancyhdr}
 \usepackage{caption}                   
 \usepackage{titlesec}                  
 \usepackage[authoryear,round]{natbib}  
@@ -49,12 +51,12 @@
 \renewcommand{\floatpagefraction}{0.88}
 \raggedbottom
 
-\newcommand{\siicline}[1]{%
+\newcommand{\siicline}[1]{
   {\centering\fontsize{13}{15.6}\selectfont #1\par}\vspace{12pt}}
 
 \begin{document}
 
-\twocolumn[%
+\twocolumn[
 \vspace*{6pt}
 
 \siicline{\bfseries Benchmarking solvers for the traveling salesman problem in last-mile delivery}
@@ -108,16 +110,16 @@ where LKH3 scales almost nothing, from about 0.061~s at 5 stops
 to 0.135~s at 100, at the same time, ALNS climbs to 27.945~s in the last instance.
 At 100 cities the GNN takes 12.030~s, ILS 8.124~s and HGS 7.432~s.
 
-\begin{figure}[!htbp]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\columnwidth]{Figures/fig1_gap.png}
+    \includegraphics[width=0.92\columnwidth]{Figures/fig1_gap.png}
     \caption{Mean optimality gap of the five solvers across instance sizes.}
     \label{fig:gap}
 \end{figure}
 
-\begin{figure}[!htbp]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\columnwidth]{Figures/fig2_time.png}
+    \includegraphics[width=0.92\columnwidth]{Figures/fig2_time.png}
     \caption{Mean runtime of the five solvers across instance sizes,
     on a logarithmic scale.}
     \label{fig:time}
@@ -131,17 +133,17 @@ best tour in 100\% of the runs against 99\% for LKH3, however, the
 difference is still smaller than 0,005\% of the mean gap. It can also be seen that ILS reached
 the best tour in 89\% of the runs, the GNN in 79\% and ALNS in only 49\%.
 
-\begin{figure}[!htbp]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\columnwidth]{Figures/fig3_tradeoff.png}
+    \includegraphics[width=0.92\columnwidth]{Figures/fig3_tradeoff.png}
     \caption{Quality versus runtime on the 100-city instances, where LKH3 is
     the only non-dominated solver.}
     \label{fig:tradeoff}
 \end{figure}
 
-\begin{figure}[!htbp]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\columnwidth]{Figures/fig4_winrate.png}
+    \includegraphics[width=0.92\columnwidth]{Figures/fig4_winrate.png}
     \caption{Percentage of runs in which each solver reached the best known
     tour, over all instance sizes.}
     \label{fig:winrate}

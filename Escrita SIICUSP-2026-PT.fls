@@ -1,0 +1,204 @@
+PWD D:\SIICUSP-2026
+INPUT C:\Users\rafam\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
+INPUT Escrita SIICUSP-2026-PT.tex
+OUTPUT Escrita SIICUSP-2026-PT.log
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\base\size10.clo
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\base\fontenc.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm1000.tfm
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\babel\babel.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\babel\txtbabel.def
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\arabi\bblopts.cfg
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\invalid\babel-brazil.tex
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\invalid\babel-brazil.tex
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\invalid\babel-brazil.tex
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\babel\locale\pt\babel-pt-BR.ini
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\babel-portuges\brazilian.ldf
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\babel-portuges\brazilian.ldf
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\babel-portuges\brazilian.ldf
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\graphics\keyval.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\iftex\iftex.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\helvet.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\helvet.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphics.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\graphics\trig.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\graphics-def\pdftex.def
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\float\float.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\titlesec\titlesec.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\natbib\natbib.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\natbib\natbib.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hyperref.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\kvsetkeys\kvsetkeys.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\kvdefinekeys\kvdefinekeys.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\pdfescape\pdfescape.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\ltxcmds\ltxcmds.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\pdftexcmds\pdftexcmds.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\infwarerr\infwarerr.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\hycolor\hycolor.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\nameref.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\refcount\refcount.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\kvoptions\kvoptions.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\etoolbox\etoolbox.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\stringenc\stringenc.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\stringenc\stringenc.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\pd1enc.def
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\intcalc\intcalc.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\puenc.def
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\url\url.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\bitset\bitset.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\bigintcalc\bigintcalc.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\hyperref\hpdftex.def
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1phv.fd
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1phv.fd
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1phv.fd
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
+INPUT .\Escrita SIICUSP-2026-PT.aux
+INPUT .\Escrita SIICUSP-2026-PT.aux
+INPUT Escrita SIICUSP-2026-PT.aux
+OUTPUT Escrita SIICUSP-2026-PT.aux
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
+INPUT .\Escrita SIICUSP-2026-PT.out
+INPUT .\Escrita SIICUSP-2026-PT.out
+INPUT Escrita SIICUSP-2026-PT.out
+INPUT Escrita SIICUSP-2026-PT.out
+OUTPUT Escrita SIICUSP-2026-PT.pdf
+INPUT .\Escrita SIICUSP-2026-PT.out
+INPUT .\Escrita SIICUSP-2026-PT.out
+OUTPUT Escrita SIICUSP-2026-PT.out
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
+INPUT .\Figures\fig1_gap.png
+INPUT .\Figures\fig1_gap.png
+INPUT .\Figures\fig1_gap.png
+INPUT .\Figures\fig1_gap.png
+INPUT .\Figures\fig1_gap.png
+INPUT .\Figures\fig1_gap.png
+INPUT .\Figures\fig1_gap.png
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
+INPUT .\Figures\fig2_time.png
+INPUT .\Figures\fig2_time.png
+INPUT .\Figures\fig2_time.png
+INPUT .\Figures\fig2_time.png
+INPUT .\Figures\fig2_time.png
+INPUT .\Figures\fig2_time.png
+INPUT .\Figures\fig2_time.png
+INPUT .\Figures\siicusp34_logo.png
+INPUT .\Figures\siicusp34_logo.png
+INPUT .\Figures\siicusp34_logo.png
+INPUT .\Figures\siicusp34_logo.png
+INPUT .\Figures\siicusp34_logo.png
+INPUT .\Figures\siicusp34_logo.png
+INPUT .\Figures\siicusp34_logo.png
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvb8t.vf
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvb8r.tfm
+INPUT C:\Users\rafam\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\base\8r.enc
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
+INPUT .\Figures\fig3_tradeoff.png
+INPUT .\Figures\fig3_tradeoff.png
+INPUT .\Figures\fig3_tradeoff.png
+INPUT .\Figures\fig3_tradeoff.png
+INPUT .\Figures\fig3_tradeoff.png
+INPUT .\Figures\fig3_tradeoff.png
+INPUT .\Figures\fig3_tradeoff.png
+INPUT .\Figures\fig4_winrate.png
+INPUT .\Figures\fig4_winrate.png
+INPUT .\Figures\fig4_winrate.png
+INPUT .\Figures\fig4_winrate.png
+INPUT .\Figures\fig4_winrate.png
+INPUT .\Figures\fig4_winrate.png
+INPUT .\Figures\fig4_winrate.png
+INPUT .\Escrita SIICUSP-2026-PT.bbl
+INPUT .\Escrita SIICUSP-2026-PT.bbl
+INPUT Escrita SIICUSP-2026-PT.bbl
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8t.tfm
+INPUT .\Figures\siicusp34_logo.png
+INPUT .\Figures\siicusp34_logo.png
+INPUT .\Figures\siicusp34_logo.png
+INPUT .\Figures\siicusp34_logo.png
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\helvetic\phvro8t.vf
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\helvetic\phvro8r.tfm
+INPUT Escrita SIICUSP-2026-PT.aux
+INPUT .\Escrita SIICUSP-2026-PT.out
+INPUT .\Escrita SIICUSP-2026-PT.out
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\type1\urw\helvetic\uhvb8a.pfb
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\type1\urw\helvetic\uhvb8a.pfb
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\type1\urw\helvetic\uhvr8a.pfb
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\type1\urw\helvetic\uhvr8a.pfb
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\type1\urw\helvetic\uhvro8a.pfb
+INPUT C:\Users\rafam\AppData\Local\Programs\MiKTeX\fonts\type1\urw\helvetic\uhvro8a.pfb
